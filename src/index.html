@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<link href="/dist/output.css" rel="stylesheet">
+	<script src="./js/script.js" defer> </script>
+	<title>Tailwind</title>
+</head>
+
+<body>
+	<!-- nav_bar------------ -->
+	<header
+		class="sticky top-0 right-0 left-0 flex flex-wrap justify-between item-center p-4 bg-white backdrop-blur-sm	 dark:bg-slate-900/95 shadow-md shadow-slate-900/5 dark:shadow-none ">
+		<div class=" flex item-center">
+			<div id="humb" class="lg:hidden relative p-1 text-slate-500 text-[24px] font-extrabold"><i
+					class="bi bi-list"></i></div>
+			<div class="lg:hidden rotate-[30deg]  px-4 text-sky-400 text-[30px] font-extrabold "><i
+					class="bi bi-box"></i>
+			</div>
+			<div class="flex item-center">
+				<div class="rotate-[30deg]  max-sm:hidden  max-lg:hidden px-4 text-sky-400 text-[30px] font-extrabold ">
+					<i class="bi bi-box"></i>
+				</div>
+				<h1 class="text-[24px] max-sm:hidden max-lg:hidden text-slate-700 dark:text-white">CACHEADVANCE</h1>
+
+			</div>
+		</div>
+		<!-- Search bar------------------------- -->
+
+		<div
+			class="flex justify-between items-center cursor-pointer  px-4  rounded-md ring-1 ring-inset dark:ring-white/5 ring-slate-200 hover:ring-slate-500 flex-wrap bg-white dark:bg-slate-700/75 text-slate-400 lg:w-96 md:w-80 lg:h-10 md:h-12 lg:mr-44 max-sm:hidden md:flex">
+			<h1><i class="bi bi-search pr-1"></i> Search docs</h1>
+			<p>ctrl k</p>
+
+
+		</div>
+
+
+		<!-- theme menu------------------------------- -->
+		<div
+			class="flex items-center text-slate-400 dark:text-slate-500 text-[24px] sticky max-sm:text-[20px] px-3 cursor-pointer ">
+			<i class="md:hidden px-3 bi bi-search"></i>
+			<i id="mode" class=" hover:text-slate-500 dark:hover:text-slate-300 relative bi bi-moon-stars-fill"></i>
+			<i id="sun" class="hover:text-slate-500 dark:hover:text-slate-300  bi bi-sun-fill hidden"> </i>
+
+			<div id="modeOpt"
+				class=" absolute z-20  right-4 top-10 space-y-2 bg-white  dark:bg-slate-800 text-sm flex-col text-left hidden p-3  ring-1 ring-slate-200 dark:ring-0 rounded-md  mr-2 ">
+				<a id="light"
+					class="flex dark:ring-0 p-1 pr-10 pl-2 ring-slate-400 rounded-md text-slate-700 dark:text-slate-400 hover:bg-slate-100 dark:hover:text-white  dark:hover:bg-slate-900 "
+					href="#"><i
+						class="bi bi-sun-fill bg-white dark:bg-slate-700 px-1 ring-1 dark:ring-white/5 ring-slate-200  rounded-md text-slate-400 mr-2"></i>
+					Light</a>
+				<a id="dark"
+					class="flex text-slate-700  ring-0 p-1 pr-10 pl-2 ring-slate-400 rounded-md dark:text-slate-400 hover:bg-slate-100 dark:hover:text-white  dark:hover:bg-slate-900  "
+					href="#"><i
+						class="bi bi-moon-stars-fill  bg-white dark:bg-slate-700 text-slate-400 px-1 ring-1 dark:ring-white/5 ring-slate-200  rounded-md  mr-2"></i>
+					Dark</a>
+				<a id="system"
+					class="flex text-slate-700 ring-0 p-1 pr-10 pl-2 ring-slate-400 rounded-md dark:text-slate-400 hover:bg-slate-100 dark:hover:text-white  dark:hover:bg-slate-900 "
+					href="#"> <i
+						class="bi bi-pc-display-horizontal mr-2  bg-white dark:bg-slate-700  px-1 ring-1 dark:ring-white/5 ring-slate-200 text-slate-400 rounded-md "></i>
+					System</a>
+			</div>
+			<!-- links------------------------ -->
+			<a href="https://github.com/gunjansharma-web"> <i class="bi bi-github px-3 hover:text-slate-500 dark:hover:text-slate-300"></i></a>
+		</div>
+	</header>
+
+	<!-- heroSection ------------------------------- --->
+	<div id="hero" class=" pt-30 max-lg:pt-20  leading-10 py-12 bg-slate-900 flex flex-wrap gap-20 max-sm:gap-10">
+		<!-- leftSide -->
+		<div class="max-lg:text-center xl:float-left lg:w-3/6 sm:w-full md:p-10 max-sm:p-4 leading-10">
+			<h1
+				class="text-[48px] text-transparent pb-4 font-medium leading-none bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text">
+				Never miss the cache again.</h1>
+			<p class="text-slate-400 text-[24px]">Cache every single thing your app could ever do ahead of time, so your
+				code never even has to run at all.</p>
+			<div class="pt-4 mt-4 ">
+				<a href="#"
+					class="rounded-full py-2 px-4 font-medium text-center bg-sky-300 text-slate-900 hover:bg-sky-200 active-bg-sky-500">Get
+					started</a>
+				<a href="https://github.com/gunjansharma-web" class="rounded-full py-2 px-4 m-2  bg-slate-800 hover:bg-slate-700 text-white">View on
+					GitHub</a>
+			</div>
+
+		</div>
+		<!-- rightSide -->
+		<div class="  m-auto max-lg:w-4/5  max-sm:w-11/12 ">
+
+			<div
+				class="max-sm:flex flex-wrap max-sm:p-2 p-4  leading-7 md:pr-12 xl:pr-44  rounded-2xl bg-[#0A101F]/80 ring-1 ring-white/10 ">
+				<div class="text-slate-500  text-xs">
+					<span><i class="bi bi-circle "></i></span>
+					<span><i class="bi bi-circle"></i></span>
+					<span><i class="bi bi-circle"></i></span>
+				</div>
+				<div class=" mt-4 text-[14px] flex space-x-2 ">
+					<div
+						class="flex h-6 p-px font-medium  rounded-full bg-gradient-to-r from-sky-400/30 via sky-400 to-sky-400 text-sky-300">
+						<div class="flex items-center rounded-full px-2.5 max-sm:px-1 bg-slate-800">
+							cache-advance.config.js</div>
+					</div>
+					<div class="flex h-6 rounded-full text-slate-500">
+
+						<div class="flex px-2.5 rounded-full item-center">package.json</div>
+					</div>
+				</div>
+				<div class="flex flex-wrap mt-6 items-start px-1">
+					<div aria-hidden="true" class="border-r border-slate-300/5 text-slate-600 pr-4 max-sm:pr-1 ">
+						01<br>
+						02<br>
+						03<br>
+						04<br>
+						05<br>
+						06<br>
+						07<br>
+					</div>
+					<div class=" pl-3 max-sm:pl-1">
+						<span class="text-pink-600">export default</span>
+						<span class="text-slate-600 pl-2"> { </span> <br>
+						<span class="text-sky-400 pl-3">strategy: 'predictive',</span>
+						<br>
+						<span class="text-sky-400 pl-3">engine</span>
+						<span class="text-slate-600 pl-2"> { </span> <br>
+						<span class="text-sky-400 pl-5">cpus: 12,</span><br>
+						<span class="text-sky-400 pl-5">backups: ['./storage/cache.wtf'],</span><br>
+						<span class="text-slate-600 pl-3"> },</span> <br>
+						<span class="text-slate-600 pl-1"> }</span> <br>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- middle part----------------------------- -->
+	<div class="flex bg:slate-100 text-slate-600 dark:bg-slate-900 dark:text-slate-500">
+		<!-- left---------------------------- -->
+		<div id="toptonav"
+			class='xl:sticky xl:bottom-0 md:w-1/4 flex items-start bg-white dark:bg-slate-900/50 top-[4.5rem] -ml-0.5 pr-10 w-full max-w-xs h-[calc(100vh-4.5rem)]  overflow-y-auto overflow-x-hidden pt-16  pl-16 max-lg:hidden'>
+			<div id="nav" class=" dark:bg-slate-900 bg-white ">
+				<ul role="list">
+					<li>
+						<h2 class="dark:text-white text-black font-medium">Intoduction</h2>
+						<ul role="list"
+							class="mt-4 pl-4 border-l-2 border-slate-100 dark:border-slate-800 lg:border-slate-200">
+							<li class="relative pb-2">
+								<a href="#gettingStarted"
+									class="hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Getting
+									started</a>
+							</li>
+							<li class="relative"><a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Installation</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h2 class="dark:text-white text-black font-medium mt-4">Core concepts</h2>
+						<ul role="list"
+							class="mt-4 pl-4 border-l-2 border-slate-100 dark:border-slate-800 lg:border-slate-200">
+							<li class="relative pb-2">
+								<a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Understanding
+									caching</a>
+							</li>
+							<li class="relative pb-2"><a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Predicting
+									user behavior</a></li>
+							<li class="relative pb-2"><a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Basics
+									of time-travel</a></li>
+							<li class="relative pb-2"><a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Introduction
+									to string theory</a></li>
+							<li class="relative"><a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">The
+									butterfly effect</a></li>
+
+						</ul>
+					</li>
+					<li>
+						<h2 class="dark:text-white text-black font-medium mt-4">Advanced guides</h2>
+						<ul role="list"
+							class="mt-4 pl-4 border-l-2 border-slate-100 dark:border-slate-800 lg:border-slate-200">
+							<li class="relative pb-2">
+								<a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Understanding
+									caching</a>
+							</li>
+							<li class="relative pb-2"><a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Predicting
+									user behavior</a></li>
+							<li class="relative pb-2"><a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Basics
+									of time-travel</a></li>
+							<li class="relative pb-2"><a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Introduction
+									to string theory</a></li>
+							<li class="relative"><a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">The
+									butterfly effect</a></li>
+
+						</ul>
+					</li>
+					<li>
+						<h2 class="dark:text-white text-black font-medium mt-4">API reference</h2>
+						<ul role="list"
+							class="mt-4 pl-4 border-l-2 border-slate-100 dark:border-slate-800 lg:border-slate-200">
+							<li class="relative pb-2">
+								<a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Understanding
+									caching</a>
+							</li>
+							<li class="relative pb-2"><a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Predicting
+									user behavior</a></li>
+							<li class="relative pb-2"><a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Basics
+									of time-travel</a></li>
+							<li class="relative "><a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Introduction
+									to string theory</a></li>
+
+						</ul>
+					</li>
+					<li>
+						<h2 class="dark:text-white text-black font-medium mt-4">Contributing</h2>
+						<ul role="list"
+							class="mt-4 pl-4 border-l-2 border-slate-100 dark:border-slate-800 lg:border-slate-200">
+							<li class="relative pb-2">
+								<a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Understanding
+									caching</a>
+							</li>
+							<li class="relative pb-2"><a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Predicting
+									user behavior</a></li>
+							<li class="relative"><a href="#"
+									class=" hover:text-sky-500 before:pointer-events-none hover:before:absolute before:-left-5 before:top-2.5  before:h-1.5 before:w-1.5 before:bg-sky-500 before:rounded-full">Basics
+									of time-travel</a></li>
+
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- center------------------------- -->
+		<div
+			class="flex gap-0 flex-auto  h-[calc(100vh-4.5rem)]  overflow-y-auto overflow-x-hidden w-3/5 px-6 lg:px-0 pt-10 ">
+			<div class="mx-10 lg:w-full  lg:mx-4 lg:pl-2  h-4/5 ">
+				<p class="text-sm  text-sky-500">Introduction</p>
+				<h1 id="gettingStarted" class="text-4xl text:black dark:text-white pt-2">Getting started</h1>
+				<h3 class="text-xl text-slate-500 dark:text-slate-400 pt-8">Learn how to get CacheAdvance set up in your
+					project in under thirty minutes or it's free. </h3>
+				<div class="flex flex-wrap gap-5 pt-10">
+					<div class="flex gap-5">
+						<div
+							class="p-6 rounded-xl flex flex-col border-2  border-slate-100 hover:border-sky-400 dark:hover:bg-slate-700 hover:bg-sky-100">
+							<i class="bi bi-send-fill text-2xl text-sky-400 py-4"></i>
+							<h4 class="text-xl text-black dark:text-white pb-3">Installation</h4>
+							<p>Step-by-step guides to setting up your system and installing the library.</p>
+						</div>
+						<div
+							class="p-6 rounded-xl border-2 flex flex-col  border-slate-100  hover:border-sky-400 dark:hover:bg-slate-700 hover:bg-sky-100">
+							<i class="bi bi-slack text-2xl text-sky-400 py-4"></i>
+							<h4 class="text-xl  text-black dark:text-white pb-3">Architecture guide</h4>
+							<p>Step-by-step guides to setting up your system and installing the library.</p>
+						</div>
+					</div>
+					<div class="flex gap-5">
+						<div
+							class="p-6  rounded-xl border-2 flex flex-col border-slate-100 hover:border-sky-400 dark:hover:bg-slate-700 hover:bg-sky-100">
+							<i class="bi bi-nut-fill text-2xl text-sky-400 py-4"></i>
+							<h4 class="text-xl  text-black dark:text-white pb-3">Plugins</h4>
+							<p>Step-by-step guides to setting up your system and installing the library.</p>
+						</div>
+						<div
+							class="p-6 rounded-xl border-2 flex flex-col border-slate-100  hover:border-sky-400 dark:hover:bg-slate-700 hover:bg-sky-100">
+							<i class="bi bi-journals text-2xl text-sky-400 py-4"></i>
+							<h4 class="text-xl  text-black dark:text-white pb-3">API itecture </h4>
+							<p>Step-by-step guides to setting up your system and installing the library.</p>
+						</div>
+					</div>
+				</div>
+				<P class="text-lg text-slate-400 py-8">Porem ipsum, dolor sit amet consectetur adipisicing elit.
+					Molestias
+					eligendi, dignissimos minima quidem repellendus ducimus aut ipsum aliquam saepe dolores unde
+					distinctio,
+					libero harum itaque voluptas fuga sint reprehenderit.</P>
+				<hr class="border-slate-800">
+				<h1 id="quickStart" class="pt-10 pb-5 text-2xl text-black dark:text-white">Quick start</h1>
+				<P class="text-lg text-slate-400 py-2">Porem ipsum, dolor sit amet consectetur adipisicing elit.
+					Molestias
+					eligendi,harum itaque voluptas fuga sint reprehenderit.</P>
+				<P class="text-lg text-slate-400 pb-8">Porem ipsum, dolor sit amet consectetur adipisicing elit.
+					Molestias
+					eligendi, dignissimos minima quidem repellendus ducimus aut ipsum aliquam saepe dolores unde
+					distinctio,
+					libero harum itaque voluptas fuga sint reprehenderit.</P>
+
+				<h1 id="basicUses" class="pt-10 pb-5 text-2xl text-black dark:text-white">Basic uses</h1>
+				<P class="text-lg text-slate-400 py-2">Porem ipsum, dolor sit amet consectetur adipisicing elit.
+					Molestias
+					eligendi,harum itaque voluptas fuga sint reprehenderit.</P>
+				<P class="text-lg text-slate-400 pb-8">Porem ipsum, dolor sit amet consectetur adipisicing elit.
+					Molestias
+					eligendi, dignissimos minima quidem repellendus ducimus aut ipsum aliquam saepe dolores unde
+					distinctio,
+					libero harum itaque voluptas fuga sint reprehenderit.</P>
+				<div class="max-w-lg mx-auto p-8">
+					<details
+						class="open:bg-white dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg"
+						open>
+						<summary class="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
+							Why do they call it Ovaltine?
+						</summary>
+						<div class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">
+							<p>The mug is round. The jar is round. They should call it Roundtine.</p>
+						</div>
+					</details>
+				</div>
+
+				<div class="bg-sky-100 dark:bg-slate-800 p-4 rounded-xl">
+					<h1 class="pt-10 pb-5 text-2xl text-sky-500">Do you know!</h1>
+					<p class="text-lg text-black/75 pb-4 dark:text-slate-400 ">Porem ipsum, dolor sit amet consectetur
+						adipisicing elit. Molestias eligendi,harum itaque voluptas fuga sint reprehenderit.
+						Porem ipsum, dolor sit amet consectetur adipisicing elit. Molestias eligendi, dignissimos minima
+						quidem repellendus ducimus aut ipsum aliquam saepe dolores unde distinctio, libero harum itaque
+						voluptas fuga sint reprehenderit.</P>
+				</div>
+				<h1 id="gettingHelp" class="pt-10 pb-5 text-2xl text-black dark:text-white">Getting help</h1>
+				<P class="text-lg text-slate-400 pt-2 pb-10">Porem ipsum, dolor sit amet consectetur adipisicing elit.
+					Molestias eligendi,harum itaque voluptas fuga sint reprehenderit.</P>
+				<hr class=" pb-10 border-slate-800">
+				<div class="float-right">
+					<p class="text-black dark:text-white text-lg">Next</p>
+					<a
+						class="text-slate-500 pt-2 pb-10 text-lg hover:text-slate-600 hover:dark:text-white/75 cursor-pointer">Installation
+						-></a>
+				</div>
+			</div>
+			<div
+				class="max-lg:hidden w-2/5 xl:flex max-sm:hidden pl-10 pr-0 md:sticky lg:sticky lg:top-[4.5rem] xl:top-[4.5rem] ">
+
+				<ul class="cursor-pointer flex-none">
+					<p class="text-black dark:text-white text-sm">On this page</p>
+					<li>
+						<h2 class="text-slate-500  text-sm py-2 hover:text-slate-600 hover:dark:text-white/75  "><a
+								href="#quickStart" class="active:text-sky-500">Quick start</a></h2>
+						<ul class="pl-4">
+							<li class="text-slate-500  text-sm  hover:text-slate-600 hover:dark:text-white/75">
+								Installing dependencies</li>
+							<li class="text-slate-500  text-sm pb-4 hover:text-slate-600 hover:dark:text-white/75">
+								Configuring the library</li>
+						</ul>
+					</li>
+					<li>
+						<h2 class="text-slate-500  text-sm py-2 hover:text-slate-600 hover:dark:text-white/75"><a
+								href="#basicUses" class="active:text-sky-500">Basic uses</a></h2>
+						<ul class="pl-4">
+							<li class="text-slate-500  text-sm  hover:text-slate-600 hover:dark:text-white/75">
+								 Dependencies</li>
+							<li class="text-slate-500  text-sm  hover:text-slate-600 hover:dark:text-white/75">
+								Configur library api</li>
+							<li class="text-slate-500  text-sm pb-4 hover:text-slate-600 hover:dark:text-white/75">
+								Installing </li>
+						</ul>
+					</li>
+
+					<li>
+						<h2 class="text-slate-500  text-sm py-2 hover:text-slate-600 hover:dark:text-white/75"><a
+								href="#gettingHelp" class="active:text-sky-500">Getting help</a></h2>
+						<ul class="pl-4">
+							<li class="text-slate-500  text-sm  hover:text-slate-600 hover:dark:text-white/75">
+								Installing </li>
+							<li class="text-slate-500  text-sm  hover:text-slate-600 hover:dark:text-white/75">
+								Configuring the web</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- <div role="button" aria-expanded="true" aria-haspopup="listbox" aria-labelledby="dosearch-lable" class="DocSearch DocSearch-Container" tabindex="0" aria-owns="DoSearch-list"> </div> -->
+</body>
+
+</html>
